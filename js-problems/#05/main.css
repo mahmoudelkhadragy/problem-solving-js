@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.clearfix{
+    clear: both;
+}
+.problem{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    padding: 80px 0 40px 0;
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+input{
+    display: block;
+    text-align: center;
+    color: #000;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+#numb1{
+    width: 25%;
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+#numb2{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 25%;
+    float: left;
+}
+#numb3{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 25%;
+    float: left;
+}
+button{
+    margin-top: 10px;
+    outline: none;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #afb2b4;
+    transition: all .2s ease-in-out;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: #ccc;
+}
+
+#result1, #result2{
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
