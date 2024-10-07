@@ -174,6 +174,20 @@ class LinkedList {
 		}
 		return slow;
 	}
+
+	hasLoop() {
+		if (this.length === 0) return false;
+		let slow = this.head;
+		let fast = this.head;
+		while (fast !== null && fast.next !== null) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (slow === fast) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
 
 let myLinkedList = new LinkedList(1);
