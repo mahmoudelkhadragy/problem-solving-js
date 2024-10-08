@@ -188,6 +188,31 @@ class LinkedList {
 		}
 		return false;
 	}
+
+	findKthFromEnd(k) {
+		// Initialize slow and fast pointers at head
+		let slow = this.head;
+		let fast = this.head;
+
+		// Move fast pointer k steps ahead
+		for (let i = 0; i < k; ++i) {
+			// If fast reaches null, k is out of range
+			if (fast === null) {
+				return null;
+			}
+			fast = fast.next;
+		}
+
+		// Iterate until fast reaches the end
+		while (fast !== null) {
+			// Move slow and fast pointers one step
+			slow = slow.next;
+			fast = fast.next;
+		}
+
+		// When fast reaches end, slow is at kth from end
+		return slow;
+	}
 }
 
 let myLinkedList = new LinkedList(1);
@@ -195,10 +220,5 @@ myLinkedList.push(2);
 myLinkedList.push(3);
 myLinkedList.push(4);
 
-console.log("LL before reverse():");
-myLinkedList.printList();
-
-myLinkedList.reverse();
-
-console.log("\nLL after reverse():");
+console.log("LL");
 myLinkedList.printList();
